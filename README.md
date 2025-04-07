@@ -11,16 +11,12 @@ A lightweight task management application built using HTMX, Flask, and SQLite th
 - No complex JavaScript or build tools required
 - Blazing fast performance with minimal client-side footprint
 
-## 🚀 Live Demo
-
-Check out the live demo: [HTMX Task Manager Demo](https://your-demo-url.com)
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTMX, HTML, CSS
 - **Backend**: Flask (Python)
 - **Database**: SQLite
-- **Deployment**: (Your deployment platform)
 
 ## 🧩 How It Works
 
@@ -36,7 +32,7 @@ This application showcases HTMX's ability to create dynamic, interactive web app
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/htmx-task-manager.git
+   git clone https://github.com/vgthomson/htmx-task-manager.git
    cd htmx-task-manager
    ```
 
@@ -51,12 +47,7 @@ This application showcases HTMX's ability to create dynamic, interactive web app
    pip install -r requirements.txt
    ```
 
-4. Initialize the database:
-   ```
-   python init_db.py
-   ```
-
-5. Start the development server:
+4. Start the development server:
    ```
    python app.py
    ```
@@ -68,17 +59,10 @@ This application showcases HTMX's ability to create dynamic, interactive web app
 ```
 htmx-task-manager/
 ├── app.py              # Flask application entry point
-├── init_db.py          # Database initialization script
-├── models.py           # SQLite database models
-├── static/             # Static assets
-│   ├── css/            # Stylesheets
-│   └── img/            # Images
 ├── templates/          # HTML templates
-│   ├── base.html       # Base template with HTMX inclusion
 │   ├── index.html      # Main application page
-│   └── partials/       # HTML fragments for HTMX swapping
-│       ├── task.html   # Single task component
-│       └── task_list.html # List of tasks component
+│   ├── task.html   # Single task component
+│   └── task_list.html # List of tasks component
 └── requirements.txt    # Python dependencies
 ```
 
@@ -119,6 +103,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
+Your Name - [@vg_thomson](https://www.linkedin.com/in/vgthomson/) - thomsonvg@outlook.com
 
 Project Link: [https://github.com/yourusername/htmx-task-manager](https://github.com/yourusername/htmx-task-manager)
