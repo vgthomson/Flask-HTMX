@@ -90,9 +90,6 @@ HTMX offers several advantages for this type of application:
 - [HTMX Examples](https://htmx.org/examples/)
 - [HTMX Discord Community](https://htmx.org/discord)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
@@ -102,6 +99,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-Your Name - [@vg_thomson](https://www.linkedin.com/in/vgthomson/) - thomsonvg@outlook.com
+V G Thomson - [@vg_thomson](https://www.linkedin.com/in/vgthomson/) - thomsonvg@outlook.com
 
 Project Link: [https://github.com/yourusername/htmx-task-manager](https://github.com/yourusername/htmx-task-manager)
