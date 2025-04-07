@@ -1,0 +1,49 @@
+<!-- templates/task_item.html -->
+<li id="task-{{ task['id'] }}" 
+    class="task-item {{ task['priority'] }} {% if task['completed'] %}completed{% endif %}">
+    <span class="htmx-indicator">Loading...</span>
+    <input type="checkbox" 
+           name="task_ids" 
+           value="{{ task['id'] }}">
+    <div class="task-content">{{ task['title'] }}</div>
+    <div class="task-meta">
+        Priority: {{ task['priority'] | capitalize }} | 
+        Due: {{ task['due_date'] or 'No due date' }} | 
+        Created: {{ task['created_at'] | datetimeformat('%H:%M:%S') }}
+    </div>
+    <div class="task-actions">
+        {% if task['completed'] %}
+            <button 
+                class="primary-btn"
+                hx-put="/tasks/{{ task['id'] }}/toggle" 
+                hx-target="#task-{{ task['id'] }}" 
+                hx-swap="outerHTML">
+                Mark Active
+            </button>
+        {% else %}
+            <button 
+                class="success-btn"
+                hx-put="/tasks/{{ task['id'] }}/toggle" 
+                hx-target="#task-{{ task['id'] }}" 
+                hx-swap="outerHTML">
+                Mark Done
+            </button>
+        {% endif %}
+        <button 
+            class="danger-btn"
+            hx-delete="/tasks/{{ task['id'] }}/delete" 
+            hx-target="#task-{{ task['id'] }}" 
+            hx-swap="outerHTML" 
+            hx-confirm="Delete this task?">
+            Delete
+        </button>
+        <select 
+            hx-put="/tasks/{{ task['id'] }}/priority" 
+            hx-target="#task-{{ task['id'] }}" 
+            hx-swap="outerHTML">
+            <option value="low" {% if task['priority'] == 'low' %}selected{% endif %}>Low</option>
+            <option value="medium" {% if task['priority'] == 'medium' %}selected{% endif %}>Medium</option>
+            <option value="high" {% if task['priority'] == 'high' %}selected{% endif %}>High</option>
+        </select>
+    </div>
+</li>
