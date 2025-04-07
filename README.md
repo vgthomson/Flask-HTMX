@@ -33,7 +33,6 @@ This application showcases HTMX's ability to create dynamic, interactive web app
 1. Clone the repository:
    ```
    git clone https://github.com/vgthomson/Flask-HTMX.git
-   cd htmx-task-manager
    ```
 
 2. Create and activate a virtual environment:
