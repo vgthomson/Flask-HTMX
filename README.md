@@ -2,8 +2,6 @@
 
 A lightweight task management application built using HTMX, Flask, and SQLite that demonstrates the power of hypermedia-driven architecture.
 
-![HTMX Task Manager Screenshot](https://your-screenshot-url-here.png)
-
 ## ✨ Features
 
 - Create, read, update, and delete tasks with real-time UI updates
